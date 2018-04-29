@@ -84,17 +84,7 @@ def get_alldocs_to_text(filename, file_path):
             print("could not read a .rtf file")
         return convert_pdf_to_txt(filepath,pdf_file)
     
-    elif filename[-4:] == ".doc":  
-        cmd = ['antiword', file_path]
-        p = Popen(cmd,shell = True, stdout=PIPE)
-        stdout, stderr = p.communicate()
-        newtxt =  stdout.decode('ascii', 'ignore')
-        updated_string, updated_list = process_on_text(newtxt)
-        print(updated_string)
-        print(updated_list)
-        return updated_string
-        
-    else:                   # odt files
+    else:                   # odt  or doc files
         newconvertedPDF = odt_file_to_pdf(filename,file_path)
         if newconvertedPDF == None :
             print("file type: ", filename[-4:] ,"could not read a that file.")
