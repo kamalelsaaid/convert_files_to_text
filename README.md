@@ -3,6 +3,7 @@ This is a quick converter from ( pdf / docx / doc / rtf / odt ) files to a strin
 
 This code is under python3.
 
-prerequisites:
+
+# prerequisites:
 
 install docx, python-docx, pdfminer
