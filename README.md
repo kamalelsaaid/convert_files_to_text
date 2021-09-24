@@ -6,4 +6,7 @@ This code is under python3.
 
 # prerequisites:
 
-install docx, python-docx, pdfminer
+Run the install.py to install prerequisites 
+
+**docx python-docx pdfminer pywin32 comtypes
+**
